@@ -1,6 +1,6 @@
 {
   "name": "local-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load local modules as global.",
   "main": "index.js",
   "scripts": {
