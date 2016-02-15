@@ -1,0 +1,25 @@
+{
+  "name": "local-module",
+  "version": "1.0.0",
+  "description": "Load local modules as a global one.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauroJr/local-module.git"
+  },
+  "keywords": [
+    "require",
+    "local",
+    "modules",
+    "node_modules"
+  ],
+  "author": "Mauro Junior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MauroJr/local-module/issues"
+  },
+  "homepage": "https://github.com/MauroJr/local-module#readme"
+}
