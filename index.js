@@ -2,7 +2,8 @@
 const fs            = require('fs'),
       debug         = require('debug')('local-module'),
       hiddenFile    = new RegExp('^[.]'),
-      upDirs        = '../../';
+      upDirs        = '../../',
+      modules       = Object.create(null);
 
 module.exports = localModules;
 
@@ -27,8 +28,10 @@ function localModules(args) {
                 modName = mod.split('.')[0];
                 
                 debug(`: loading module ${modName}`);
-                localModules[modName] = require(`${upDirs + dir}/${modName}`);
+                modules[modName] = require(`${upDirs + dir}/${modName}`);
             });
+            
+            module.exports = modules;
         });
     } else {
         debug(`"parameters must be strings or an array of directories names.`);
